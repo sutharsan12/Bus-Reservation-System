@@ -1,0 +1,5 @@
+/* src/components/Buses/Buses.css */
+.table td {
+    vertical-align: middle;
+    justify-content: center;
+  }

@@ -1,0 +1,116 @@
+.bus-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.bus-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.bus-row .bus-aisle {
+  width: 50px;
+}
+
+.bus-row .bus-seat,
+.bus-row .bus-aisle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 2px;
+}
+
+.bus-row .bus-seat.available {
+  background-color: #f1f1f1;
+}
+
+.bus-row .bus-seat.available:hover,
+.bus-row .bus-seat.available.selected {
+  cursor: pointer;
+  background-color: #ff0000; /* Red color */
+}
+
+.bus-row .bus-seat.occupied {
+  background-color: #a3e3ea;
+}
+
+.bus-row .bus-aisle:not(:first-child) {
+  margin-left: 10px;
+}
+
+.bus-row .bus-aisle.empty {
+  width: 50px;
+  background-color: #ffffff;
+  margin-right: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.mt-5 {
+  margin-top: 3rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+.col-md-6 {
+  flex-basis: 50%;
+}
+
+.available {
+  cursor: pointer;
+}
+
+.occupied {
+  cursor: default;
+}
+
+.bus-row .bus-seat.fixed-booked {
+  background-color: grey;  /* Change to your desired shade of grey */
+}
+/* Add this to your CSS file */
+.disabled {
+  pointer-events: none; /* Disable click events on the button */
+  opacity: 0.5; /* Apply some visual indication for a disabled button */
+}

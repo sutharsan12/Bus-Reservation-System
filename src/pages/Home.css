@@ -1,0 +1,13 @@
+.banner-container {
+    background-color: #d7d0d099;
+    background-image: url('C:\Hexaware\FINAL PROJECT\demo\frontend\public\Busimage\bus2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 60vh;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    background-blend-mode: overlay;
+    align-items: center;
+}
